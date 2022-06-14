@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from scipy import stats
@@ -12,6 +13,7 @@ x = data["transacoes_site"]
 y2 = data2["receita"]
 x2 = data2["transacoes_site"]
 
+
 plt.scatter(x, y, color="red", label="Before")
 plt.scatter(x2, y2, color="blue", label="After")
 
@@ -24,10 +26,11 @@ def myfunc(x):
 def myfunc_2(x2):
   return slope2 * x2 + intercept2
 
+
 mymodel = list(map(myfunc, x))
-mymodel_2 = list(map(myfunc_2, x2))
+mymodel_2 = np.array(x.values)*slope2 +intercept2
 
 plt.plot(x, mymodel, color = "red")
-plt.plot(x2, mymodel_2, color = "blue")
+plt.plot(x, mymodel_2, color = "blue")
 
 plt.show()
