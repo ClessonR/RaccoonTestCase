@@ -1,16 +1,9 @@
 import numpy as np
 import pandas as pd
 import scipy.stats as stats
-import matplotlib.pyplot as plt
-import statsmodels.api as sm
 
-from scipy.stats import f_oneway
-from scipy.stats import chi2_contingency
-from statsmodels.formula.api import ols
 
 dataframe = pd.read_csv("Data/typed_combine.csv")
-
-dataframe.sample(10)
 
 def to_bit(dataframe):
     "Transforms types into bit 1 or 0"
