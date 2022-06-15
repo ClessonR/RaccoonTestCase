@@ -9,11 +9,10 @@ df.drop(["transacoes_blog",
                         "usuarios_blog",
                         "usuarios_site"], axis=1, inplace=True)
 
-
 df.plot(color='green', linewidth=3, figsize=(12,6))
 df['receita'].rolling(window=72).mean().plot()
 
-
+print(df['receita'].rolling(window=72).mean())
 
 plt.xticks(fontsize=14)
 plt.yticks(fontsize=14)
