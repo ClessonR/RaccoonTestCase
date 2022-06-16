@@ -68,8 +68,8 @@ with col2:
     x2 = data2["transacoes_site"]
 
     fig, ax = plt.subplots(figsize=(15, 7))
-    ax.scatter(x, y, color="red", label="Before")
-    ax.scatter(x2, y2, color="blue", label="After")
+    ax.scatter(x, y, color="red", label="Antes do Blog")
+    ax.scatter(x2, y2, color="blue", label="Após o Blog")
 
     slope, intercept, r, p, std_err = stats.linregress(x, y)
     slope2, intercept2, r2, p2, std_err2 = stats.linregress(x2, y2)
@@ -78,6 +78,7 @@ with col2:
     mymodel_2 = np.array(x.values)*slope2 +intercept2
     ax.plot(x, mymodel, color = "red")
     ax.plot(x, mymodel_2, color = "blue")
+    plt.legend()
     plt.xlabel("Transações")
     plt.ylabel('Receita [R$]')
 
