@@ -22,7 +22,7 @@ col1, col2= st.columns(2)
 with col1:
     st.markdown("<h1 style='text-align: center; color: yellow;'>Comportamento da Receita</h1>", unsafe_allow_html=True)
 
-    df = pd.read_csv("Data/full_data.csv", index_col='data', parse_dates=True)
+    df = pd.read_csv("full_data.csv", index_col='data', parse_dates=True)
 
 
     df.drop(["transacoes_blog",
@@ -58,8 +58,8 @@ with col2:
     def myfunc_2(x2):
         return slope2 * x2 + intercept2
 
-    data = pd.read_csv("Data/before_blog.csv")
-    data2 = pd.read_csv("Data/after_blog_combined.csv")
+    data = pd.read_csv("before_blog.csv")
+    data2 = pd.read_csv("after_blog_combined.csv")
 
     y = data["receita"]
     x = data["transacoes_site"]
@@ -85,7 +85,7 @@ with col2:
 
     st.markdown("<h1 style='text-align: center; color: yellow;'>Usuários que realizaram alguma transação</h1>",unsafe_allow_html=True)
 
-    image = Image.open("Data/users.png")
+    image = Image.open("users.png")
 
     st.image(image,use_column_width=True )
 
@@ -98,7 +98,7 @@ col3, col4,col5 = st.columns([1,3,1])
 with col4:
     st.markdown("<h1 style='text-align: center; color: yellow;'>Decomposição</h1>",unsafe_allow_html=True)
 
-    dataframe = pd.read_csv("Data/typed_combine.csv")
+    dataframe = pd.read_csv("typed_combine.csv")
     dataframe['data'] = pd.to_datetime(dataframe['data'])
     dataframe.rename(columns = {'receita':'Receita ao longo do tempo'}, inplace = True)
     dataframe = dataframe.set_index('data')['Receita ao longo do tempo']
