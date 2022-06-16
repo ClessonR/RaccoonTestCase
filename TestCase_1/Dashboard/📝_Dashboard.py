@@ -20,7 +20,7 @@ st.markdown("---")
 col1, col2= st.columns(2)
 
 with col1:
-    st.markdown("<h1 style='text-align: center; color: yellow;'>Comportamento da Receita</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: white;'>Comportamento da Receita</h1>", unsafe_allow_html=True)
 
     df = pd.read_csv("/app/raccoontestcase/TestCase_1/Dashboard/Data/full_data.csv", index_col='data', parse_dates=True)
 
@@ -39,7 +39,7 @@ with col1:
 
     st.pyplot(fig)
 
-    st.markdown("<h1 style='text-align: center; color: yellow;'>Tendência da Receita</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: white;'>Tendência da Receita</h1>", unsafe_allow_html=True)
 
     fig, ax = plt.subplots(figsize=(15, 7))
     ax = plt.plot(df.index, df['receita'].rolling(window=72).mean())
@@ -50,7 +50,7 @@ with col1:
     st.pyplot(fig)
 
 with col2:
-    st.markdown("<h1 style='text-align: center; color: yellow;'>Regressão de Receita p. Transação</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: white;'>Regressão de Receita p. Transação</h1>", unsafe_allow_html=True)
 
     def myfunc(x):
         return slope * x + intercept
@@ -84,7 +84,7 @@ with col2:
 
     st.pyplot(fig)
 
-    st.markdown("<h1 style='text-align: center; color: yellow;'>Usuários que realizaram alguma transação</h1>",unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: white;'>Usuários que realizaram alguma transação</h1>",unsafe_allow_html=True)
 
     image = Image.open("/app/raccoontestcase/TestCase_1/Dashboard/Data/users.png")
 
@@ -97,7 +97,7 @@ col3, col4,col5 = st.columns([1,3,1])
 
 
 with col4:
-    st.markdown("<h1 style='text-align: center; color: yellow;'>Decomposição</h1>",unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: white;'>Decomposição</h1>",unsafe_allow_html=True)
 
     dataframe = pd.read_csv("/app/raccoontestcase/TestCase_1/Dashboard/Data/typed_combine.csv")
     dataframe['data'] = pd.to_datetime(dataframe['data'])
