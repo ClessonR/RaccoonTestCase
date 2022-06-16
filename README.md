@@ -1,7 +1,9 @@
-# RaccoonTestCase
+<h1 style='text-align: center; color: white;'>Dashboard Racconn Monks</h1>
+
+
 A repo with the aim of showcase my data analysis with Python/SQL/Sheets.
 
-# Test Case 1
+<h1 style='text-align: center; color: white;'>Test Case 1</h1>
 
 Logo ao ler a questão fornecida, apliquei a filosofia da qual aprendi no Google, que serve amplamente para qualquer análise de dados (APPASA) Ask, Prepare, Processe, Analyse, Share e Act, então tive o brainstorm. 
 Observando os dados, já pude notar que existiam dois grupos de dados a serem analisados, dados antes do blog e dados após seu lançamento, imediatamente pensei em duas abordagens, previsão de vendas com a existência e sem a existência do blog e provas que mostrem se o blog teve algum impacto, caso sim qual foi ele? De que forma esse impacto pode ser mensurado? Primeiramente começarei com um Teste de Hipótese (Two-Sample T Test) supondo que a hipótese nula é que o blog não interfere em nada no site de maneira geral, também adotarei um p-value de 5%. 
@@ -13,27 +15,8 @@ Para resultados mais concretos em relação à uma possível lógica de crescime
 
 Em relação à linguagem de programação o Python foi utilizado  juntamente às suas bibliotecas Numpy, Pandas, Statsmodels, Matplotlib e Scipy, todas utilizadas para fazer o plot e o cálculo de cada gráfico.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
-# Test Case 2
+<h1 style='text-align: center; color: white;'>Test Case 2</h1>
 For this part of the case I basically used PostgreSQL with Microsoft SQL Server Management Studio.
 For a more in depth explanation of the case, please see the .sql file itself.
 
