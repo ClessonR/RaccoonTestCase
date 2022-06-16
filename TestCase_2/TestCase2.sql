@@ -18,7 +18,7 @@ where passenger_count between 1 and 5
 GROUP BY passenger_count
 ORDER BY passenger_count;
 
--- Considerando apenas as corridas que houveram pedagios (tolls), qual a media do valor pago em pedagios por corrida? R$6,74 OK
+-- Considerando apenas as corridas que houveram pedagios (tolls), qual a media do valor pago em pedagios por corrida? R$6,74
 
 select SUM(tolls_amount)/COUNT(*) from dbo.testcase 
 where tolls_amount > 0;
