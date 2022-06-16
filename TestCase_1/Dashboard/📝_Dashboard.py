@@ -99,7 +99,7 @@ col3, col4,col5 = st.columns([1,3,1])
 with col4:
     st.markdown("<h1 style='text-align: center; color: yellow;'>Decomposição</h1>",unsafe_allow_html=True)
 
-    dataframe = pd.read_csv("/app/raccoontestcase/TestCase_1/Dashboard/ata/typed_combine.csv")
+    dataframe = pd.read_csv("/app/raccoontestcase/TestCase_1/Dashboard/Data/typed_combine.csv")
     dataframe['data'] = pd.to_datetime(dataframe['data'])
     dataframe.rename(columns = {'receita':'Receita ao longo do tempo'}, inplace = True)
     dataframe = dataframe.set_index('data')['Receita ao longo do tempo']
