@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 from scipy import stats
 
 
-data = pd.read_csv("Data/before_blog.csv")
-data2 = pd.read_csv("Data/after_blog_combined.csv")
+data = pd.read_csv("Dashboard/Data/before_blog.csv")
+data2 = pd.read_csv("Dashboard/Data/after_blog_combined.csv")
 
 y = data["receita"]
 x = data["transacoes_site"]

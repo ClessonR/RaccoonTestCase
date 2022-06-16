@@ -3,7 +3,7 @@ import pandas as pd
 import scipy.stats as stats
 
 
-dataframe = pd.read_csv("Data/typed_combine.csv")
+dataframe = pd.read_csv("Dashboard/Data/typed_combine.csv")
 
 def to_bit(dataframe):
     "Transforms types into bit 1 or 0"

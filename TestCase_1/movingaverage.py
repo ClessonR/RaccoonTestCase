@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("Data/full_data.csv", index_col='data', parse_dates=True)
+df = pd.read_csv("Dashboard/Data/full_data.csv", index_col='data', parse_dates=True)
 
 
 df.drop(["transacoes_blog",
