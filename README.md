@@ -18,7 +18,7 @@ Para resultados mais concretos em relação à uma possível lógica de crescime
 Em relação à linguagem de programação o Python foi utilizado  juntamente às suas bibliotecas Numpy, Pandas, Statsmodels, Matplotlib e Scipy, todas utilizadas para fazer o plot e o cálculo de cada gráfico.
 
 ---
-<h1 style='text-align: center; color: white;'>Test Case 2</h1>
+<h1 align= "center">Test Case 2</h1>
 For this part of the case I basically used PostgreSQL with Microsoft SQL Server Management Studio.
 For a more in depth explanation of the case, please see the .sql file itself.
 
