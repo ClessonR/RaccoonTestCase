@@ -1,7 +1,7 @@
 <h1 style='text-align: center; color: white;'>Dashboard Racconn Monks</h1>
 
 
-A repo with the aim of showcase my data analysis with Python/SQL/Sheets.
+A repo with the aim of showcase my data analysis with Python/SQL/Sheets and deploy a dashboard created with StreamLit.
 
 <h1 style='text-align: center; color: white;'>Test Case 1</h1>
 
