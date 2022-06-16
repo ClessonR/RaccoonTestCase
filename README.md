@@ -1,9 +1,9 @@
-<h1 style='text-align: center; color: white;'>Dashboard Racconn Monks</h1>
+<h1 align= "center">Dashboard Racconn Monks</h1>
 
 
 A repo with the aim of showcase my data analysis with Python/SQL/Sheets and deploy a dashboard created with StreamLit.
 
-<h1 style='text-align: center; color: white;'>Test Case 1</h1>
+<h1 align= "center">Test Case 1</h1>
 
 [Clique aqui para ver o Dashboard!](https://share.streamlit.io/clessonr/raccoontestcase/main/TestCase_1/Dashboard/%F0%9F%93%9D_Dashboard.py)
 
