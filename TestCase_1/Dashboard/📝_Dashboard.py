@@ -11,7 +11,7 @@ from PIL import Image
 st.set_page_config(page_title=None, page_icon=None, layout="wide", initial_sidebar_state="auto", menu_items=None)
 plt.style.use('ggplot')
 
-st.markdown("<h1 style='text-align: center; color: white;'>Dashboard Racconn Monks</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: white;'>Dashboard Raccoon Monks</h1>", unsafe_allow_html=True)
 
 
 
