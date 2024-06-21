@@ -91,8 +91,8 @@ with col2:
     st.pyplot(fig)
 
     st.markdown("<h1 style='text-align: center; color: white;'>Usuários que realizaram alguma transação</h1>",unsafe_allow_html=True)
-
-    image = Image.open("/app/raccoontestcase/TestCase_1/Dashboard/Data/users.png")
+    image_path = os.path.join("TestCase_1", "Dashboard", "Data", "users.png")
+    image = Image.open(image_path)
 
     st.image(image,use_column_width=True )
 
