@@ -22,7 +22,7 @@ col1, col2= st.columns(2)
 with col1:
     st.markdown("<h1 style='text-align: center; color: white;'>Comportamento da Receita</h1>", unsafe_allow_html=True)
 
-    df = pd.read_csv("Data/full_data.csv", index_col='data', parse_dates=True)
+    df = pd.read_csv("full_data.csv", index_col='data', parse_dates=True)
 
 
     df.drop(["transacoes_blog",
