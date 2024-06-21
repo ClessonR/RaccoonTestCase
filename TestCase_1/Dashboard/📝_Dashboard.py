@@ -6,7 +6,7 @@ from statsmodels.tsa.seasonal import seasonal_decompose
 import matplotlib.pyplot as plt
 from scipy import stats
 from PIL import Image
-
+import os
 
 st.set_page_config(page_title=None, page_icon=None, layout="wide", initial_sidebar_state="auto", menu_items=None)
 plt.style.use('ggplot')
@@ -21,8 +21,9 @@ col1, col2= st.columns(2)
 
 with col1:
     st.markdown("<h1 style='text-align: center; color: white;'>Comportamento da Receita</h1>", unsafe_allow_html=True)
-
-    df = pd.read_csv("/app/raccoontestcase/TestCase_1/Dashboard/Data/full_data.csv", index_col='data', parse_dates=True)
+    # Define the relative path to the CSV file
+    file_path = os.path.join("Data", "full_data.csv")
+    df = pd.read_csv(file_path, index_col='data', parse_dates=True)
 
 
     df.drop(["transacoes_blog",
