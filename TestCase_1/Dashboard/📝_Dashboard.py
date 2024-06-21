@@ -26,7 +26,7 @@ col1, col2= st.columns(2)
 with col1:
     st.markdown("<h1 style='text-align: center; color: white;'>Comportamento da Receita</h1>", unsafe_allow_html=True)
     # Define the relative path to the CSV file
-    file_path = os.path.join("Data", "full_data.csv")
+    file_path = os.path.join("TestCase_1", "Dashboard", "Data", "full_data.csv")
     df = pd.read_csv(file_path, index_col='data', parse_dates=True)
 
 
