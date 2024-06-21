@@ -12,9 +12,7 @@ st.set_page_config(page_title=None, page_icon=None, layout="wide", initial_sideb
 plt.style.use('ggplot')
 
 st.markdown("<h1 style='text-align: center; color: white;'>Dashboard Raccoon Monks</h1>", unsafe_allow_html=True)
-# Print current working directory and list all files
-st.write("Current working directory:", os.getcwd())
-st.write("Files in current directory:", os.listdir())
+
 
 
 st.markdown("---")
@@ -104,8 +102,8 @@ col3, col4,col5 = st.columns([1,3,1])
 
 with col4:
     st.markdown("<h1 style='text-align: center; color: white;'>Decomposição</h1>",unsafe_allow_html=True)
-
-    dataframe = pd.read_csv("/app/raccoontestcase/TestCase_1/Dashboard/Data/typed_combine.csv")
+    df_path = os.path.join("TestCase_1", "Dashboard", "Data", "typed_combine.csv")
+    dataframe = pd.read_csv(df_path)
     dataframe['data'] = pd.to_datetime(dataframe['data'])
     dataframe.rename(columns = {'receita':'Receita ao longo do tempo'}, inplace = True)
     dataframe = dataframe.set_index('data')['Receita ao longo do tempo']
