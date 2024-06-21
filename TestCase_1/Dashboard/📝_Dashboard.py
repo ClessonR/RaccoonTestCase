@@ -12,12 +12,16 @@ st.set_page_config(page_title=None, page_icon=None, layout="wide", initial_sideb
 plt.style.use('ggplot')
 
 st.markdown("<h1 style='text-align: center; color: white;'>Dashboard Raccoon Monks</h1>", unsafe_allow_html=True)
-
+# Print current working directory and list all files
+st.write("Current working directory:", os.getcwd())
+st.write("Files in current directory:", os.listdir())
 
 
 st.markdown("---")
 
 col1, col2= st.columns(2)
+
+
 
 with col1:
     st.markdown("<h1 style='text-align: center; color: white;'>Comportamento da Receita</h1>", unsafe_allow_html=True)
