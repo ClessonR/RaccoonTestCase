@@ -62,9 +62,10 @@ with col2:
 
     def myfunc_2(x2):
         return slope2 * x2 + intercept2
-
-    data = pd.read_csv("/app/raccoontestcase/TestCase_1/Dashboard/Data/before_blog.csv")
-    data2 = pd.read_csv("/app/raccoontestcase/TestCase_1/Dashboard/Data/after_blog_combined.csv")
+    file_path_blog = os.path.join("TestCase_1", "Dashboard", "Data", "before_blog.csv")
+    file_path_blog_combined = os.path.join("TestCase_1", "Dashboard", "Data", "after_blog_combined.csv")
+    data = pd.read_csv(file_path_blog)
+    data2 = pd.read_csv(file_path_blog_combined)
 
     y = data["receita"]
     x = data["transacoes_site"]
